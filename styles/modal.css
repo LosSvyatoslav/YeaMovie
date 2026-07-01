@@ -1,0 +1,114 @@
+.modal{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.modal.active{
+    background-color: var( --color-overlay);
+}
+.modal__content{
+    border: 3px solid var(--color-border);
+    border-radius: 10px;
+    padding: 50px 30px;
+    margin-bottom: 30px;
+    background-color: #0F1117;
+    position: relative;
+}
+.modal__top-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.modal__poster{
+    max-width: 330px;
+    border-radius: 15px;
+    
+}
+
+.modal__movie-title{
+    color: var(--color-text-primary);
+    font-size: 40px;  
+}
+.modal__movie-info{
+    display: flex;
+    align-items: center;
+    color: var(--color-text-primary);
+    font-size: 22px;
+    margin-top: 30px;
+}
+.modal__movie-info li:not(li:last-child){
+    border-right: 2px solid var(--color-border);
+}
+.modal__movie-info li {
+    padding: 0 30px;
+}
+.modal__movie-rating{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+}
+#modal__movie-rating{
+    padding-left: 0;
+}
+.movie__rating-number{
+    font-weight: 600;
+}
+.modal__movie-year, .modal__movie-genres{
+ min-height: 30px;
+ display: flex;
+ align-items: center;
+}
+.modal__movie-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    color: var(--color-text-primary);
+    font-size: 22px;
+}
+.modal__movie-row{
+    display: flex;
+    gap: 20px;
+}
+.modal__movie-label{
+    min-width: 222px;
+}
+.modal__movie-value{
+    font-weight: 600;
+
+}
+.modal__movie-description{
+   color: var(--color-text-primary); 
+   border-top: 2px solid var(--color-border);
+}
+.modal__description-title{
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 500;
+}
+.modal__description-text{
+    margin-top: 20px;
+    font-size: 22px;
+}
+.modal__closeBtn{
+   border: none;
+   background: none;
+}
+.modal__closeBtn-icon{
+    color: var(--color-text-primary);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;  
+}
+.modal__overlay{
+   background-color: var(--color-overlay);
+}

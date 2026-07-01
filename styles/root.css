@@ -1,0 +1,37 @@
+:root {
+    --color-bg: #0F1117;              /* фон страницы */
+    --color-surface: #161A22;         /* карточки / модалки */
+    --color-surface-hover: #1B1F27;   /* hover у карточек */
+
+    /* Акцентные */
+    --color-primary: #3B82F6;         /* основной синий */
+    --color-primary-hover: #60A5FA;   /* hover кнопок */
+    --color-accent: #F59E0B;          /* звезда рейтинга / акцент */
+
+    /* Текст */
+    --color-text-primary: #E5E7EB;    /* основной текст */
+    --color-text-secondary: #9CA3AF;  /* вторичный текст */
+    --color-text-muted: #6B7280;      /* приглушенный текст */
+
+    /* Границы */
+    --color-border: #2A2F3A;          /* бордеры */
+    --color-divider: #252A34;         /* разделители */
+
+    /* Поля ввода */
+    --color-input-bg: #111827;
+    --color-input-border: #374151;
+    --color-placeholder: #6B7280;
+
+    /* Overlay модалки */
+    --color-overlay: rgba(0, 0, 0, 0.7);
+
+    /* Состояния */
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+
+    /* Тени */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
