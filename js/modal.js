@@ -69,7 +69,7 @@ function renderModal (movieData) {
                         </li>
                         <li class="modal__movie-row">
                             <span class="modal__movie-label">Продолжительность:</span>
-                            <span class="modal__movie-value">${movieData.movieLength} мин.</span>
+                            <span class="modal__movie-value">${movieData.movieLength ? movieData.movieLength + ' мин.' : 'Неизвестно'}</span>
                         </li>
                         <li class="modal__movie-row">
                             <span class="modal__movie-label">Страна:</span>
@@ -110,5 +110,5 @@ function renderModal (movieData) {
                     </button>
     `
     modalContainerElement.innerHTML = '';
-    modalContainerElement.appendChild(modalElement);
+    modalContainerElement.append(modalElement);
 }

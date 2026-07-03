@@ -12,12 +12,15 @@ export function searchMovies () {
     const foundMovies = await getMoviesByName(searchElement.value);
     renderMovies(foundMovies)
     }
+    else {
+    renderMovies(movies)
+    }
     })
 }
 
 function validation(searchElement) {
     if(searchElement.value.trim() === '') {
-       renderMovies(movies)
+       return false
     }
     else {return true;}
 }
